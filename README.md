@@ -127,3 +127,9 @@ Once the corresponding paper or report is available, we will add a recommended c
 
 - Faruk Özgür  
 - Ibrahim Riza Hallac
+
+---
+
+## Related Material
+
+- Poster: *Detecting AI Influence in Student Writing* (NORA / AI4AfL) — [`docs/poster/NORA_2024_poster.pdf`](docs/poster/NORA_2024_poster.pdf)
