@@ -18,7 +18,7 @@ This project investigates:
 
 ---
 
-## Repository Structure (Minimal)
+## Repository Structure
 
 - `data/` — local copies of the student essay data and derived JSONL structures (`train.csv`, `ell_essay_families_structure_V2.jsonl`)  
 - `notebooks/` — exploratory and generation notebooks (`Essay_JSON*.ipynb`)  
