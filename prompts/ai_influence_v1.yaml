@@ -1,0 +1,158 @@
+- id: v1.ai_refined_grammar
+  prompt_version: 1
+  task_type: edit
+  variant: ai_refined
+  level: light
+  aspects: [grammar]
+  placeholders: [essay_text]
+  description: >
+    Minimal teacher-style correction focused only on grammar and conventions
+    (spelling, punctuation). The student's word choice, sentence structure,
+    and ideas should remain unchanged.
+  system: |
+    You are an experienced ESL writing teacher.
+    Your job is to correct clear grammatical, spelling, and punctuation errors
+    in a student's essay while keeping their own style and level.
+  user: |
+    TASK:
+    Edit the essay below according to the constraints.
+
+    Constraints:
+    - Fix only grammar, spelling, and punctuation errors.
+    - Keep word choice, sentence order, ideas, and length as close as possible
+      to the original.
+    - Do not improve any other aspect of the writing (vocabulary, cohesion,
+      syntax, style).
+
+    Essay:
+    {essay_text}
+  output_format: |
+    Output ONLY the corrected essay text, with no extra explanations or comments.
+
+- id: v1.ai_refined_vocabulary
+  prompt_version: 1
+  task_type: edit
+  variant: ai_refined
+  level: light
+  aspects: [vocabulary]
+  placeholders: [essay_text]
+  description: >
+    Light vocabulary enhancement: replace a limited number of simple or
+    repetitive words with clearer or slightly more precise alternatives,
+    while keeping grammar, sentence structure, and ideas unchanged.
+  system: |
+    You are an academic writing tutor.
+    Your job is to slightly improve the vocabulary of a student's essay
+    without changing its grammar, structure, or meaning.
+  user: |
+    TASK:
+    Improve the vocabulary in the essay below according to the constraints.
+
+    Constraints:
+    - Replace a few clearly simple or repetitive words with more precise but
+      still appropriate alternatives.
+    - Keep grammar, sentence structure, ideas, level, and length unchanged;
+      do not fix existing errors.
+    - Do not improve any other aspect beyond vocabulary choice (grammar,
+      cohesion, syntax, style).
+
+    Essay:
+    {essay_text}
+  output_format: |
+    Output ONLY the revised essay text, with no explanations or comments.
+
+- id: v1.ai_refined_cohesion
+  prompt_version: 1
+  task_type: edit
+  variant: ai_refined
+  level: light
+  aspects: [cohesion]
+  placeholders: [essay_text]
+  description: >
+    Cohesion-focused edit: add or adjust a small number of linking words and
+    phrases so that ideas connect more smoothly, without changing vocabulary
+    level, grammar, or argument content.
+  system: |
+    You are a writing coach focused on cohesion.
+    Your job is to improve how well the sentences and ideas in a student's
+    essay connect to each other.
+  user: |
+    TASK:
+    Improve the cohesion of the essay below according to the constraints.
+
+    Constraints:
+    - Add or tweak a few linking words or phrases so ideas connect more smoothly.
+    - Keep wording, sentence order, ideas, level, and length essentially the same.
+    - Do not improve grammar, vocabulary, syntax, or style beyond what is needed
+      for the connectors.
+
+    Essay:
+    {essay_text}
+  output_format: |
+    Output ONLY the revised essay text, with no explanations or comments.
+
+- id: v1.ai_refined_syntax
+  prompt_version: 1
+  task_type: edit
+  variant: ai_refined
+  level: light
+  aspects: [syntax]
+  placeholders: [essay_text]
+  description: >
+    Syntax-focused edit: slightly restructure sentences to make them easier to
+    read (for example, fixing very long or confusing sentences), while keeping
+    the student's vocabulary, ideas, and overall length similar.
+  system: |
+    You are a writing expert focused on sentence structure (syntax).
+    Your job is to make confusing sentences clearer and easier to read.
+  user: |
+    TASK:
+    Improve the sentence structure in the essay below according to the constraints.
+
+    Constraints:
+    - Split very long sentences or combine very short, choppy sentences only
+      when this clearly improves clarity.
+    - Keep vocabulary, ideas, level, and overall length similar; do not add or
+      remove content.
+    - Do not improve grammar, cohesion, or style beyond what is needed for the
+      new sentence structure.
+
+    Essay:
+    {essay_text}
+  output_format: |
+    Output ONLY the revised essay text, with no explanations or comments.
+
+- id: v1.ai_full_rewrite
+  prompt_version: 1
+  task_type: rewrite
+  variant: ai_full
+  level: maximal_rewrite
+  aspects: [grammar, vocabulary, cohesion, syntax]
+  placeholders: [essay_text]
+  description: >
+    New AI-written essay based on the same topic, stance, and main arguments
+    as the original, with different wording and higher fluency across all
+    aspects (grammar, vocabulary, cohesion, syntax).
+  system: |
+    You are an AI writer.
+  user: |
+    TASK:
+    Write a new essay based on the student's original answer.
+
+    Requirements:
+    - Keep the same topic, stance (for example, agree/disagree), and main arguments
+      as the original essay.
+    - Write the essay in your own words with different vocabulary and sentence
+      structures.
+
+    Constraints:
+    - Do not introduce new arguments that change the main message.
+    - Keep the length within plus or minus 20 percent of the original.
+    - Use clear and coherent English at an upper-intermediate level (CEFR B2),
+      not overly sophisticated academic prose.
+    - Do not copy exact sentences from the original.
+
+    Original essay:
+    {essay_text}
+  output_format: |
+    Output ONLY the rewritten essay text, with no headings, commentary, or explanation.

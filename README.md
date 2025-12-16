@@ -18,6 +18,16 @@ This project investigates:
 
 ---
 
+## Repository Structure (Minimal)
+
+- `data/` — local copies of the student essay data and derived JSONL structures (`train.csv`, `ell_essay_families_structure_V2.jsonl`)  
+- `notebooks/` — exploratory and generation notebooks (`Essay_JSON*.ipynb`)  
+- `prompts/` — centralised prompt templates used for LLM-based generation  
+- `docs/` — project materials such as the NORA poster  
+- `Gemini API/` — auxiliary scripts and configuration for running Gemini-based generation (kept as-is)
+
+---
+
 ## Dataset Design
 
 Each student-written paragraph is versioned into three controlled variants:
