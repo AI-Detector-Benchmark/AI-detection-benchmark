@@ -1,0 +1,11 @@
+text_id,full_text,cohesion,syntax,vocabulary,phraseology,grammar,conventions,intent
+SYN_G1,"I think phones in class can be helpful because students can search fast, but sometimes it make them distracted and they not listen the teacher.",3.0,3.0,3.0,3.0,3.0,3.0,grammar
+SYN_G2,"My friend say school start too early, and it make us tired in the morning. I agree because students is not focus when they sleepy.",3.0,3.0,3.0,3.0,3.0,3.0,grammar
+SYN_V1,"The movie was good and the actors were good. The story was good too, but the ending was good only in some parts.",3.0,3.0,3.0,3.0,3.0,3.0,vocabulary
+SYN_V2,I think this plan is nice because it is nice for students and nice for teachers. It is a nice way to do the project.,3.0,3.0,3.0,3.0,3.0,3.0,vocabulary
+SYN_C1,I like team sports. You can learn to cooperate. People can make friends. It keeps you healthy.,3.0,3.0,3.0,3.0,3.0,3.0,cohesion
+SYN_C2,Schools should teach coding. It helps with problem solving. Jobs need these skills. Students feel more confident.,3.0,3.0,3.0,3.0,3.0,3.0,cohesion
+SYN_S1,In my opinion the rule should be changed because many students have jobs after school and they need time to rest and do homework which makes it hard.,3.0,3.0,3.0,3.0,3.0,3.0,syntax
+SYN_S2,"Some students learn faster. Others need more time. It can be helpful, but it can also be confusing for them.",3.0,3.0,3.0,3.0,3.0,3.0,syntax
+SYN_F1,I agree that students should read every day because reading helps you learn new words and you can understand different ideas.,3.0,3.0,3.0,3.0,3.0,3.0,full_rewrite
+SYN_F2,I disagree with wearing uniforms at school. They are uncomfortable and students want to show their style.,3.0,3.0,3.0,3.0,3.0,3.0,full_rewrite

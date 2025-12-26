@@ -1,5 +1,1 @@
-text_id,full_text,cohesion,syntax,vocabulary,phraseology,grammar,conventions
-
-Feedback Prize – English Language Learning dataset from Kaggle. Follow the competition’s terms of use when downloading and using train.csv
-
-Raw Kaggle essays are not included in this repo.
+/cluster/datastore/ibrahimh/projects/Faruk/local_data/train.csv

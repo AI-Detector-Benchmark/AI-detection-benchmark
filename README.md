@@ -22,7 +22,8 @@ This project investigates:
 
 - `data/` — local copies of the student essay data and derived JSONL structures (`train.csv`, `ell_essay_families_structure_V2.jsonl`)  
 - `notebooks/` — exploratory and generation notebooks (`Essay_JSON*.ipynb`)  
-- `prompts/` — centralised, versioned prompt templates used for LLM-based generation (see `prompts/README.md`)  
+- `src/` — core Python utilities and prompt templates (see `docs/prompts.md`)  
+- `scripts/` — runnable tools and demos (prompt preview, OpenAI test, variant generation)  
 - `docs/` — project materials such as the NORA poster  
 - `Gemini API/` — auxiliary scripts and configuration for running Gemini-based generation (kept as-is)
 
@@ -52,7 +53,7 @@ Generation is **prompt-controlled** to ensure:
 - Meaning preservation
 - Comparable intervention strength
 - Separation between editing and full generation
-Prompt templates for each aspect (grammar, vocabulary, cohesion, syntax, and full rewrite) are versioned in `prompts/ai_influence_v1.yaml`.
+Prompt templates for each aspect (grammar, vocabulary, cohesion, syntax, and full rewrite) are versioned in `src/ai_detection_benchmark/ai_influence_v1.yaml`.
 
 ---
 
@@ -124,6 +125,8 @@ to be added.
 The original student essays used in this project come from the **Feedback Prize – English Language Learning** competition (`train.csv`) on Kaggle: https://www.kaggle.com/competitions/feedback-prize-english-language-learning.
 
 Due to licensing and data-sharing constraints, **we cannot redistribute the original student texts**. This repository will instead provide **augmented and model-generated variants**, along with derived annotations and metadata where permitted.
+
+Local setup note: in this repo, `data/` contains a public generated file (`ell_essay_families_structure_V2.jsonl`) and **symlinks** to local-only Kaggle files stored in `/cluster/datastore/ibrahimh/projects/Faruk/local_data` (e.g., `train.csv`, `test.csv`, and splits). This keeps licensed data off the public repo while still enabling local development.
 
 ---
 

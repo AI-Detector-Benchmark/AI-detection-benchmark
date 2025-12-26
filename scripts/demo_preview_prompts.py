@@ -10,8 +10,11 @@ This script does NOT call any external API. It only prints:
 from __future__ import annotations
 
 from textwrap import indent
+from pathlib import Path
+import sys
 
-from essay_prompts_v1 import get_prompt, list_prompts
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from ai_detection_benchmark.prompts import get_prompt, list_prompts  # noqa: E402
 
 
 SAMPLE_ESSAY = (
@@ -52,4 +55,3 @@ if __name__ == "__main__":
     # Preview all prompts defined in ai_influence_v1.yaml
     for tmpl in list_prompts():
         preview_prompt(tmpl.id)
-
