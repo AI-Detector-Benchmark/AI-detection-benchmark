@@ -127,7 +127,7 @@ The original student essays used in this project come from the **Feedback Prize 
 
 Due to licensing and data-sharing constraints, **we cannot redistribute the original student texts**. This repository will instead provide **augmented and model-generated variants**, along with derived annotations and metadata where permitted.
 
-Local setup note: in this repo, `data/` contains a public generated file (`ell_essay_families_structure_V2.jsonl`) and **symlinks** to local-only Kaggle files stored in `/cluster/datastore/ibrahimh/projects/Faruk/local_data` (e.g., `train.csv`, `test.csv`, and splits). This keeps licensed data off the public repo while still enabling local development.
+Local setup note: in this repo, `data/` contains a public generated file (`ell_essay_families_structure_V2.jsonl`) and **symlinks** to local-only Kaggle files (e.g., `train.csv`, `stratified_*`, `few_samples.csv`). This keeps licensed data off the public repo while still enabling local development.
 
 ---
 
