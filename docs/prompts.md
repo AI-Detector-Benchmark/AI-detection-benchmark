@@ -2,7 +2,7 @@
 
 This folder centralises all prompt templates used for generating AI-influenced essay variants.
 
-- `src/ai_detection_benchmark/ai_influence_v1.yaml`  
+- `prompts/ai_influence_v1.yaml`  
   - Source of truth for prompts.  
   - Each entry has: `id`, `prompt_version`, `task_type`, `variant`, `level`, `aspects`, `placeholders`, `system`, `user`, `output_format`.  
   - Placeholders (currently `essay_text`) must match the `{...}` tokens in the text.

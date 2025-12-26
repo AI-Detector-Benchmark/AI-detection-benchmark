@@ -22,7 +22,8 @@ This project investigates:
 
 - `data/` — local copies of the student essay data and derived JSONL structures (`train.csv`, `ell_essay_families_structure_V2.jsonl`)  
 - `notebooks/` — exploratory and generation notebooks (`Essay_JSON*.ipynb`)  
-- `src/` — core Python utilities and prompt templates (see `docs/prompts.md`)  
+- `src/` — core Python utilities (see `docs/prompts.md`)  
+- `prompts/` — human‑editable prompt templates (source of truth)  
 - `scripts/` — runnable tools and demos (prompt preview, OpenAI test, variant generation)  
 - `docs/` — project materials such as the NORA poster  
 - `Gemini API/` — auxiliary scripts and configuration for running Gemini-based generation (kept as-is)
@@ -53,7 +54,7 @@ Generation is **prompt-controlled** to ensure:
 - Meaning preservation
 - Comparable intervention strength
 - Separation between editing and full generation
-Prompt templates for each aspect (grammar, vocabulary, cohesion, syntax, and full rewrite) are versioned in `src/ai_detection_benchmark/ai_influence_v1.yaml`.
+Prompt templates for each aspect (grammar, vocabulary, cohesion, syntax, and full rewrite) are versioned in `prompts/ai_influence_v1.yaml`.
 
 ---
 

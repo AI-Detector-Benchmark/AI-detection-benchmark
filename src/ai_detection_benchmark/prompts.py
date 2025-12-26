@@ -15,7 +15,7 @@ import re
 import yaml
 
 
-PROMPT_FILE = Path(__file__).with_name("ai_influence_v1.yaml")
+PROMPT_FILE = Path(__file__).resolve().parents[2] / "prompts" / "ai_influence_v1.yaml"
 
 
 @dataclass(frozen=True)
